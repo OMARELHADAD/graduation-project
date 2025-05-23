@@ -59,4 +59,23 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = '../index.html';
         });
     }
+
+    function addProductToCart(button) {
+        const productDiv = button.closest('.pro');
+        const product = {
+            id: productDiv.dataset.id,
+            name: productDiv.dataset.name,
+            price: parseFloat(productDiv.dataset.price),
+            image: productDiv.dataset.image
+        };
+        
+        addToCart(product);
+        alert('Product added to cart!');
+    }
+    
+    // Initialize cart when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize cart count
+        updateCartCount();
+    });
 });
