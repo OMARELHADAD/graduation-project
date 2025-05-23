@@ -558,4 +558,631 @@ footer a:hover{
 }
 
 
+/* Cart Page Styles */
+#page-header {
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
 
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1),
+#cart table td:nth-child(2),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+#cart table tbody tr {
+    border-bottom: 1px solid #e2e9e1;
+}
+
+#cart table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Sign Up Page Styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.logo-container img {
+    width: 120px;
+}
+
+#signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* Responsive styles for sign-up page */
+@media (max-width: 477px) {
+    #signup-form {
+        padding: 10px;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    color: #088178;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #606063;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e9e1;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #088178;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    margin-right: 8px;
+}
+
+.forgot {
+    color: #088178;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.form-container button.normal {
+    width: 100%;
+    background-color: #088178;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-container button.normal:hover {
+    background-color: #046963;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e2e9e1;
+}
+
+.divider span {
+    position: relative;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #606063;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #e2e9e1;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
+
+.social-btn.facebook {
+    color: #3b5998;
+}
+
+.social-btn.google {
+    color: #db4437;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-link a {
+    color: #088178;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Login Page Styles */
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* Responsive styles for login page */
+@media (max-width: 477px) {
+    #login-form {
+        padding: 10px;
+    }
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    color: #088178;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #606063;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e9e1;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #088178;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    margin-right: 8px;
+}
+
+.forgot {
+    color: #088178;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.form-container button.normal {
+    width: 100%;
+    background-color: #088178;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-container button.normal:hover {
+    background-color: #046963;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e2e9e1;
+}
+
+.divider span {
+    position: relative;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #606063;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #e2e9e1;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
+
+.social-btn.facebook {
+    color: #3b5998;
+}
+
+.social-btn.google {
+    color: #db4437;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-link a {
+    color: #088178;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+#cart-add .btn-ghover:hover {
+    color: #10ffef;
+    transition: 0.4s ease;
+    box-shadow: 1px 1px 1px #10ffef7a ;
+}
+#subtotal .btn-ghover:hover {
+    color: #10ffef;
+    transition: 0.4s ease;
+    box-shadow: 1px 1px 1px #10ffef7a ;
+}
+
+#contact-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+
+/* Responsive styles for cart and login pages */
+@media (max-width: 799px) {
+    #feature {
+        justify-content: center;
+    }
+    
+    #feature .fe-box {
+        margin: 15px;
+    }
+    
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    
+    #product1 .pro {
+        margin: 15px;
+    }
+    
+    #banner {
+        height: 30vh;
+    }
+    
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+    
+    #banner3 {
+        padding: 0 40px;
+    }
+    
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    
+    #newsletter .form {
+        width: 70%;
+    }
+    
+    footer .col {
+        margin-bottom: 30px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 20px;
+    }
+    
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navbar li {
+        margin-bottom: 10px;
+    }
+    
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    
+    #hero h1 {
+        font-size: 32px;
+    }
+    
+    #hero h2 {
+        font-size: 30px;
+    }
+    
+    #feature {
+        justify-content: space-between;
+    }
+    
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    
+    #product1 .pro {
+        width: 100%;
+    }
+    
+    #banner {
+        height: 25vh;
+    }
+    
+    #sm-banner .banner-box {
+        height: 35vh;
+    }
+    
+    #banner3 {
+        padding: 0 20px;
+    }
+    
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    
+    #newsletter {
+        padding: 40px 20px;
+    }
+    
+    #newsletter .form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+    
+    footer .col {
+        width: 100%;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+}

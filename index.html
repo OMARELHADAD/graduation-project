@@ -4,464 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <title>e-commerce</title>
+    <title>Sign Up - e-commerce</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="header">
-        <a href="index.html" style="float: right;"> <img src="img/logo.png" alt="logo" class="logo " style="width: 80px;"> </a>
-        <div>
-            <ul id="navbar">
-                <li><a href="#">hero</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><i class="fas fa-shopping-bag" style="color: black;"></i></a></li>
+    <div class="logo-container">
+        <img src="img/logo.png" alt="logo" class="logo">
+    </div>
 
-            </ul>
+    <!-- Sign Up Section -->
+    <section id="signup-form">
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <p>Please fill in the information below to register</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the Terms & Conditions</label>
+                    </div>
+                </div>
+                <button type="submit" class="normal">Sign Up</button>
+            </form>
+            <div class="register-link">
+                <p>Already have an account? <a href="html/login.html">Login now</a></p>
+            </div>
         </div>
     </section>
 
-    <!-- end of nav -->
-
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
-
-    <!-- end of hero sec-->
-
-
-<section id="feature" class="section-p1">
-
-    <div class="fe-box">
-        <img src="img/features/f1.png" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-        <div class="fe-box">
-        <img src="img/features/f2.png" alt="">
-        <h6>Online Order</h6>
-    </div>
-        <div class="fe-box">
-        <img src="img/features/f3.png" alt="">
-        <h6>Save Money</h6>
-    </div>
-        <div class="fe-box">
-        <img src="img/features/f4.png" alt="">
-        <h6>Promotions</h6>
-    </div>
-        <div class="fe-box">
-        <img src="img/features/f5.png" alt="">
-        <h6>Happy Sell</h6>
-    </div>
-        <div class="fe-box">
-        <img src="img/features/f6.png" alt="">
-        <h6>24/7 Support</h6>
-    </div>
-
-</section>
-
-<!-- end of feature sec -->
-
-<section id ="product1" class="section-p1 shopnow" >
-    <h2>Featured Products</h2>
-    <p>Spring/Summer Collection New Modern Design</p>
-    <div class="pro-container">
-        <div class="pro" >
-            <img src="img/products/f1.jpg" alt="product 1">
-            <div class="des">
-                <span>Adidas</span>
-                <h5>Summer Shirt</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h4>$78.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f2.jpg" alt="product 2">
-            <div class="des">
-            <span>supreme</span>
-            <h5>flowers dream</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$65.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f3.jpg" alt="product 3">
-            <div class="des">
-            <span>H&M</span>
-            <h5>good times</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$55.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f4.jpg" alt="product 4">
-            <div class="des">
-            <span>H&M</span>
-            <h5>sakora</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$90.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f5.jpg" alt="product 5">
-            <div class="des">
-            <span>calvin klein</span>
-            <h5>Spring Hug</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f6.jpg" alt="product 6">
-            <div class="des">
-            <span>Levi's</span>
-            <h5>Denim Jeans</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$85.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f7.jpg" alt="product 7">
-            <div class="des">
-            <span>H&M</span>
-            <h5>Rose pants</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$25.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/f8.jpg" alt="product 8">
-            <div class="des">
-            <span>Zara</span>
-            <h5>Not a Cat</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$120.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-
-    </div>
-    
-</section>
-
-<!-- end of product sec -->
-
-<section id="banner" class="section-m1">
-    <h4>Repair Services</h4>
-    <h2>Up to <span>70% off</span> - All t-shirts & accessories</h2>
-    <button class="normal">Explore More</button>
-    </h4>
-</section>
-
-<!-- end of banner sec -->
-
-<section id ="product1" class="section-p1">
-    <h2>New Arrivals</h2>
-    <p>Spring/Summer Collection New Modern Design</p>
-    <div class="pro-container">
-        <div class="pro" >
-            <img src="img/products/n1.jpg" alt="product 1">
-            <div class="des">
-                <span>Uniqlo</span>
-                <h5>Airism Cotton</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h4>$19.90</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n2.jpg" alt="product 2">
-            <div class="des">
-            <span>GAP</span>
-            <h5>Classic but Not</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$39.99</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n3.jpg" alt="product 3">
-            <div class="des">
-            <span>Old Navy</span>
-            <h5>Everyday shirt</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$29.50</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n4.jpg" alt="product 4">
-            <div class="des">
-            <span>American Eagle</span>
-            <h5>Soft Denim </h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$34.95</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n5.jpg" alt="product 5">
-            <div class="des">
-            <span>Hollister</span>
-            <h5>Graphical</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$24.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n6.jpg" alt="product 6">
-            <div class="des">
-            <span>Pacsun</span>
-            <h5>Essential</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>$32.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n7.jpg" alt="product 7">
-            <div class="des">
-            <span>Abercrombie</span>
-            <h5>Relaxed Fit </h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$22.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-
-        <div class="pro" >
-            <img src="img/products/n8.jpg" alt="product 8">
-            <div class="des">
-            <span>Urban Outfitters</span>
-            <h5>Canvas Tote</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>$18.00</h4>
-            </div>
-            <a href="#"><i class="fas fa-shopping-cart cart " style="color: #088178;"></i></a>
-        </div>
-    </div>
-</section>
-    
-
-<!-- end of product sec 2 -->
-
-
-<section id="sm-banner" class="section-p1">
-    <div class="banner-box">
-        <h4>Crazy Deals !</h4>
-        <h2>Buy 1 get 1 free</h2>
-        <span>The Best Classical Shirts are on sale at Sprints </span>
-        <button class="white">Learn More</button>
-    </div>
-
-    <div class="banner-box banner-box2">
-        <h4>Spring/Summer</h4>
-        <h2>Up comming season</h2>
-        <span>The Best Classic dress are on sale on Sprints </span>
-        <button class="white">Collection</button>
-    </div>
-</section>
-
-<section id="banner3">
-    <div class="banner-box">
-        <h2>SEASONAL SALE</h2>
-        <h3>Winter collection ON 50% OFF</h3>
-    </div>
-    <div class="banner-box banner-box2">
-        <h2>NEW FOOTWEAR COLLECTION</h2>
-        <h3>spring with sprints / 2025</h3>
-    </div>
-    <div class="banner-box banner-box3">
-        <h2>T-SHIRTS</h2>
-        <h3>create trends with sprints</h3>
-    </div>
-</section>
-
-<!-- end of banner sec -->
-
-
-<section id="newsletter" class="section-p1 section-m1">
-    <div class="newstext">
-        <h4>Sign Up for Newsletters</h4>
-        <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
-    </div>
-    <div class="form">
-        <input type="text" placeholder="Your email address">
-        <button class="normal">Sign Up</button>
-    </div>
-</section>
-
-
-<!-- end of newsletter sec -->
-
-
-<footer class="section-p1">
-    <div class="col">
-        <h4>Contact</h4>
-        <p><strong>Address:</strong> 123 Street, City, Country</p>
-        <p><strong>Phone:</strong> +123456789</p>
-        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-        <div class="follow">
-            <h4>Follow Us</h4>
-            <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-youtube"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <h4>About</h4>
-        <a href="#">About Us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-    </div>
-
-    <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Order</a>
-    </div>
-
-    <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-            <img src="img/pay/app.jpg" alt="app store">
-            <img src="img/pay/play.jpg" alt="Google Play">
-        </div>
-        <p>Secured Payment Gateways</p>
-        <img src="img/pay/pay.png" alt="payment methods">
-    </div>
-</footer>
-
+    <!-- Copyright sec -->
     <div class="copyright">
-        <img class="logo" src="img/logo.png" alt="logo sprints" height="90px">
-        <p>&copy;Omar Elhadad , Sprints graduation project</p>
+        <img class="logo" src="img/logo.png" alt="logo sprints" height="60px">
+        <p>&copy; Omar Elhadad, Sprints graduation project</p>
     </div>
 
     <script src="script.js"></script>
