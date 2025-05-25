@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <title>e-commerce</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <section id="header">
@@ -13,7 +13,13 @@
         <div>
             <ul id="navbar">
                 <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop.html">Clothing</a>
+                        <a href="shoe.html">Footwear</a>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-bag" style="color: black;"></i><span id="cart-count" class="cart-counter">0</span></a></li>
                 <li><a href="#" id="logout"><i class="fas fa-sign-out-alt" style="color: black;"></i></a></li>
@@ -440,10 +446,10 @@
 
     <div class="col">
         <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Order</a>
+        <a href="../index.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="cart.html">My Wishlist</a>
+        <a href="cart.html">Track My Order</a>
     </div>
 
     <div class="col install">

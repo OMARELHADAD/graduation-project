@@ -152,6 +152,7 @@ function completePurchase() {
 document.addEventListener('DOMContentLoaded', function() {
     updateCartCount();
     
+    // Initialize cart page elements 
     if (window.location.pathname.includes('cart.html')) {
         displayCartItems();
         updateCartTotals();
@@ -179,19 +180,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // Add to Cart buttons on product cards
     const cartButtons = document.querySelectorAll('.cart');
     cartButtons.forEach((button, index) => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const productElement = this.closest('.pro');
-            const product = {
-                id: 'product_' + index,
-                name: productElement.querySelector('h5').textContent,
-                price: parseFloat(productElement.querySelector('h4').textContent.replace('$', '')),
-                image: productElement.querySelector('img').src,
-                brand: productElement.querySelector('span').textContent
-            };
-            addToCart(product);
+            if (productElement) {
+                const product = {
+                    id: 'product_' + index,
+                    name: productElement.querySelector('h5').textContent,
+                    price: parseFloat(productElement.querySelector('h4').textContent.replace('$', '')),
+                    image: productElement.querySelector('img').src,
+                    brand: productElement.querySelector('span').textContent
+                };
+                addToCart(product);
+            }
+        });
+    });
+    
+    // Handle cart icon in navbar separately
+    const cartLinks = document.querySelectorAll('.cart-link');
+    cartLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            
         });
     });
 });

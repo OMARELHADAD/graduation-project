@@ -1,7 +1,4 @@
-// Check which page we're on and run the appropriate code
-
 document.addEventListener('DOMContentLoaded', function() {
-
     // Sign-up page logic
 
     const signupForm = document.querySelector('#signup-form form');
@@ -77,5 +74,35 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize cart count
         updateCartCount();
+    });
+
+    // Mobile dropdown functionality 
+    const dropdownBtns = document.querySelectorAll('.dropbtn');
+    if (dropdownBtns.length > 0) {
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (window.innerWidth < 768) {
+                    e.preventDefault();
+                    const dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === 'block') {
+                        dropdownContent.style.display = 'none';
+                    } else {
+                        dropdownContent.style.display = 'block';
+                    }
+                }
+            });
+        });
+    }
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                }
+            });
+        }
     });
 });

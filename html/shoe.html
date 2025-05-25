@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoes e-commerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="../css/shoe.css">
+</head>
+<body>
+    <section id="header" class="sticky-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex justify-content-start">
+                    <a href="home.html"> <img src="../img/logo.png" alt="logo" class="logo" style="width: 80px;"> </a>
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul id="navbar" class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                        <li><a class="dropdown-item" href="shop.html">Clothing</a></li>
+                                        <li><a class="dropdown-item" href="shoe.html">Footwear</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link cart-link" href="cart.html">
+                                    <i class="fas fa-shopping-bag" style="color: black;"></i>
+                                    <span id="cart-count" class="cart-counter">0</span>
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="logout">
+                                    <i class="fas fa-sign-out-alt" style="color: black;"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+
+    <section id="page-header">
+    </section>
+
+    <!-- shoe Shop header Section -->
+    <section id="shoe-shop-header" class="section-p1 section-m1">
+        <h2>FOOTWEAR-COLLECTION</h2>
+        <p>Find the perfect pair of shoes for every occasion.</p>
+    </section>
+
+    <!-- shoe Shop Section -->
+    <section id="addidas" class="section-p1">
+        <div class="section-p1 shoe-side-header">
+            <h2>Adidas Campus</h2>
+        </div>
+
+        <!-- products cards using Bootstrap grid -->
+        <section id="product1" class="container-fluid">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/adiddas-sh-1.webp" alt="product 1" class="img-fluid">
+                        <div class="des">
+                            <span>Adidas</span>
+                            <h5>adidas Campus 00s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$99.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/addidas-sh-2.webp" alt="product 2" class="img-fluid">
+                        <div class="des">
+                            <span>Adidas</span>
+                            <h5>adidas Campus 20s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$99.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/addidas-sh-3.webp" alt="product 3" class="img-fluid">
+                        <div class="des">
+                            <span>Adidas</span>
+                            <h5>adidas Campus 30s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$99.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/addidas-sh-4.jpeg" alt="product 4" class="img-fluid">
+                        <div class="des">
+                            <span>Adidas</span>
+                            <h5>adidas Campus OG</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$110.00</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+        <!-- Nike Section -->
+
+
+
+    
+
+<section id="addidas" class="section-p1">
+    <section id="page-header-nike">
+    </section>
+
+    <section id="nike" class="section-p1">
+        <div class="section-p1 shoe-side-header">
+            <h2>Nike Airforce</h2>
+        </div>
+
+        <!-- products cards using Bootstrap grid -->
+        <section id="product1" class="container-fluid">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-1.webp" alt="product 1" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce pro-1s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$92.49</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-2.webp" alt="product 2" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce lite-1</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$104.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-3.webp" alt="product 3" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce 30s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$89.00</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-4.webp" alt="product 4" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce OG0.1</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$110.00</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-5.webp" alt="product 5" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce lite-00s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$80.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-6.webp" alt="product 6" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce maxe's</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$97.50</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-7.webp" alt="product 7" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce soft-step</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$102.00</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/nike-sh-8.webp" alt="product 8" class="img-fluid">
+                        <div class="des">
+                            <span>Nike</span>
+                            <h5>Nike Airforce masters-004s</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$115.25</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+<!-- new balance section -->
+
+
+
+
+
+    <section id="page-header-newbalance">
+    </section>
+
+    <section id="newbalance" class="section-p1">
+        <div class="section-p1 shoe-side-header">
+            <h2>New Balance</h2>
+        </div>
+
+        <!-- products cards using Bootstrap grid -->
+        <section id="product1" class="container-fluid">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-1.webp" alt="product 1" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 990v5</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$74.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-2.webp" alt="product 2" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 574 Core</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$82.50</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-3.webp" alt="product 3" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance Fresh Foam</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$78.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-4.webp" alt="product 4" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 327</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$89.00</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-5.webp" alt="product 5" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 1080v11</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$95.75</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-6.webp" alt="product 6" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 2002R</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$71.25</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-7.webp" alt="product 7" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 550</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$87.99</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="pro">
+                        <img src="../img/footwear/newbalance-sh-8.webp" alt="product 8" class="img-fluid">
+                        <div class="des">
+                            <span>New Balance</span>
+                            <h5>New Balance 9060</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$92.50</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart cart" style="color: #088178;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!--copy wright section-->
+
+    <div class="copyright">
+        <img class="logo" src="../img/logo.png" alt="logo sprints" height="90px">
+        <p>&copy;Omar Elhadad , Sprints graduation project</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cart functionality -->
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
+

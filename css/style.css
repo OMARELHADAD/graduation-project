@@ -85,6 +85,7 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+    height: auto; /* Ensure height adjusts to content */
 }
 
 #navbar{
@@ -102,7 +103,7 @@ body{
 #navbar li a{
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px */
     font-weight: 600;
     transition: 0.3s ease;
 }
@@ -122,10 +123,67 @@ body{
     left: 20px;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #1a1a1a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #e3e6f3;
+    color: #088178;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn::after {
+    content: '▼';
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Ensure the active state works for dropdown button */
+#navbar li .dropbtn.active {
+    color: #088178;
+}
+
+#navbar li .dropbtn.active::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
 /* home page */
 
 #hero{
-    background-image: url("img/hero4.png");
+    background-image: url("../img/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -146,7 +204,7 @@ body{
 }
 
 #hero button{
-    background-image: url("img/button.png");
+    background-image: url("../img/button.png");
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -307,7 +365,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/banner/b2.jpg");
+    background-image: url("../img/banner/b2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -344,7 +402,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/banner/b17.jpg");
+    background-image: url("../img/banner/b17.jpg");
     min-width: 620px;
     height: 50vh;
     background-size: cover;
@@ -353,7 +411,7 @@ body{
 }
 
 #sm-banner .banner-box2:nth-child(2){
-    background-image: url("img/banner/b10.jpg");
+    background-image: url("../img/banner/b10.jpg");
 }
 
 #sm-banner h4{
@@ -397,7 +455,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/banner/b7.jpg");
+    background-image: url("../img/banner/b7.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -420,10 +478,10 @@ body{
 }
 
 #banner3 .banner-box2{
-    background-image: url("img/banner/b4.jpg");
+    background-image: url("../img/banner/b4.jpg");
 }
 #banner3 .banner-box3{
-    background-image: url("img/banner/b18.jpg");
+    background-image: url("../img/banner/b18.jpg");
 }
 
 
@@ -432,7 +490,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url("img/banner/b14.png");
+    background-image: url("../img/banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -560,7 +618,7 @@ footer a:hover{
 
 /* Cart Page Styles */
 #page-header {
-    background-image: url("img/banner/b1.jpg");
+    background-image: url("../img/banner/b1.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -585,6 +643,7 @@ footer a:hover{
     border-collapse: collapse;
     table-layout: fixed;
     white-space: nowrap;
+    font-size: 14px;
 }
 
 #cart table img {
@@ -594,10 +653,20 @@ footer a:hover{
 #cart table td:nth-child(1),
 #cart table td:nth-child(2),
 #cart table td:nth-child(4),
-#cart table td:nth-child(5),
 #cart table td:nth-child(6) {
     width: 100px;
     text-align: center;
+}
+
+#cart table td:nth-child(5) {
+    width: 80px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px;
+    font-size: 13px;
 }
 
 #cart table td:nth-child(3) {
@@ -1090,16 +1159,22 @@ footer a:hover{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 400px;
+    height: 80%;
+    overflow-y: auto;
     border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .close {
@@ -1121,24 +1196,57 @@ footer a:hover{
 #receipt h2 {
     color: #088178;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 #receipt-items {
     text-align: left;
     margin: 20px 0;
+    font-size: 14px;
 }
 
 #receipt-total {
     border-top: 2px solid #088178;
     padding-top: 10px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
 
 /* Responsive styles for cart and login pages */
 @media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px; /* Reduced horizontal padding */
+    }
+    
+    #cart table {
+        font-size: 13px;
+    }
+    
+    #cart table img {
+        width: 60px;
+    }
+    
+    #cart table td:nth-child(1),
+    #cart table td:nth-child(2),
+    #cart table td:nth-child(4),
+    #cart table td:nth-child(6) {
+        width: 80px;
+    }
+    
+    #cart table td:nth-child(3) {
+        width: 200px;
+    }
+    
+    #cart-add {
+        flex-direction: column;
+    }
+    
+    #coupon, #subtotal {
+        width: 100%;
+    }
+    
     #feature {
         justify-content: center;
     }
@@ -1184,6 +1292,66 @@ footer a:hover{
 }
 
 @media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    
+    #header {
+        padding: 10px;
+    }
+    
+    #navbar {
+        padding: 10px 0px;
+    }
+    
+    #navbar li {
+        padding: 0 10px;
+    }
+    
+    #navbar li a {
+        font-size: 12px;
+    }
+    
+    #cart table {
+        font-size: 10px;
+    }
+    
+    #cart table img {
+        width: 50px;
+    }
+    
+    #cart table td:nth-child(1),
+    #cart table td:nth-child(2),
+    #cart table td:nth-child(4),
+    #cart table td:nth-child(6) {
+        width: 60px;
+    }
+    
+    #cart table td:nth-child(5) {
+        width: 40px;
+    }
+    
+    #cart table td:nth-child(5) input {
+        width: 40px;
+        padding: 5px 2px;
+        font-size: 10px;
+    }
+    
+    #cart table td:nth-child(3) {
+        width: 120px;
+    }
+    
+    #cart table thead td {
+        font-size: 11px;
+        padding: 10px 0;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 15px;
+    }
+
     #header {
         padding: 10px 20px;
     }
